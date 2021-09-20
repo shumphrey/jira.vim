@@ -18,6 +18,12 @@ Completions
 
 Type \<project\>-\<search term\> then trigger omnicomplete (`ctrl-x ctrl-o` by default)
 
+Authentication
+--------------
+
+This plugin currently assumes curl can talk to your Jira without vim configuration.
+e.g. ~/.curlrc contains everything your curl needs to talk to your Jira.
+
 Popups and Preview Menus
 ------------------------
 
