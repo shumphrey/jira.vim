@@ -16,7 +16,7 @@ let g:jira_domain = 'https://my.jira.com'
 Completions
 -----------
 
-Type <project>-<search term> then trigger omnicomplete (`ctrl-x ctrl-o` by default)
+Type \<project\>-\<search term\> then trigger omnicomplete (`ctrl-x ctrl-o` by default)
 
 Popups and Preview Menus
 ------------------------
