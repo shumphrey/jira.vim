@@ -16,15 +16,12 @@ endfunction
 
 augroup my_jira
     autocmd!
-    if exists('+omnifunc')
+    if exists('+omnifunc') && !empty(get(g:, 'jira_domain')) && empty(get(g:, 'jira_ignore_setup'))
         autocmd FileType gitcommit call s:SetUpMessage(expand('<afile>:p'))
         " Must be some way to set the filetype of the popup
         autocmd BufEnter *
             \ if expand('%') ==# '' && &previewwindow && pumvisible() && getbufvar('#', '&omnifunc') ==# 'jira#omnifunc#handler' |
             \    setlocal nolist filetype=confluencewiki |
-            " \ elseif &buftype ==# 'popup' |
-            " \    echom 'SETTING BUFENTER ON POPUP' |
-            " \    setlocal nolist filetype=confluencewiki |
             \ endif
         endif
 augroup END
