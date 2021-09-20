@@ -13,12 +13,28 @@ In your vimrc:
 let g:jira_domain = 'https://my.jira.com'
 ```
 
-
 Completions
 -----------
 
 Type <project>-<search term> then trigger omnicomplete (`ctrl-x ctrl-o` by default)
 
+Popups and Preview Menus
+------------------------
+
+If you have a modern vim try:
+
+```vim
+set completeopt+=popup
+```
+
+That might subjectively produce a nicer completion experience.
+
+If you don't have popup support and you don't like the preview window, you
+can remove the preview window with
+
+```vim
+set completeopt-=preview
+```
 
 Working with GitHub, GitLab or other git repos
 ----------------------------------------------
