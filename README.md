@@ -1,5 +1,5 @@
-Jira.vim
-=========
+🙈 Jira.vim 🙈
+==============
 
 Everyone's Jira is configured differently.
 This is unlikely to work for anyone else.
